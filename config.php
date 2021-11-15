@@ -1,6 +1,6 @@
 <?php
 
-    $os = "win"; // Available values: "win" , "linux"
+    $os = ""; // Available values: "win" , "linux"
     $adminPass = "speedadmin";
 
 ?>
