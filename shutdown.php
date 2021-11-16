@@ -1,12 +1,6 @@
 <?php
 
-    require_once "config.php";
-
-    session_start();
-
-    if (!$_SESSION['isLogged'] == TRUE) {
-        header("Location: login.php");
-    }
+require_once "header.php";
 
     if($os == "win") {
         system("shutdown /s");

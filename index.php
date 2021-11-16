@@ -2,19 +2,16 @@
 
 
 
-    session_start();
+require_once "header.php";
 
-    if (!$_SESSION['isLogged'] == TRUE) {
-        header("Location: login.php");
-    }
 
-    echo "<h1>SpeedAdmin</h1>";
+    echo "<br> <a href='shutdown.php'><button>Wyłącz serwer ></button></a> ";
 
-    echo "<a href='shutdown.php'><button>Wyłącz serwer ></button></a> ";
+    echo " <a href='reboot.php'><button>Zrestartuj serwer ></button></a> ";
 
-    echo "<a href='reboot.php'><button>Zrestartuj serwer ></button></a> ";
+    echo " <a href='cmd.php'><button>Wywołaj komendę ></button></a> ";
 
-    echo "<a href='cmd.php'><button>Wywołaj komendę ></button></a> ";
+    echo " <a href='phpinfo.php'><button>Pokaż PHPInfo ></button></a> ";
 
-    echo "<a href='logout.php'><button>Wyloguj się ></button></a> ";
+    echo " <a href='logout.php'><button>Wyloguj się ></button></a> ";
 ?>
